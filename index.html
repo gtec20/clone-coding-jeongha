@@ -5,18 +5,19 @@
     <title>네이버 | 로그인</title>
 </head>
 <style>
+
     .header{
         color: forestgreen;
         text-align: center;
         margin: auto;
         position: relative;
-        width: 743px;
         box-sizing: border-box;
     }
     ul{
         list-style: none;
         text-align: center;
     }
+
 </style>
 <body>
     <!-- 전체적인 로그인 틀 -->
@@ -66,6 +67,17 @@
                                 <label for="keep" class="keep_text">
                                     로그인 상태 유지
                                 </label>
+                            </div>
+                            <div class="ip_check">
+                                <a href="https://nid.naver.com/login/ext/help_ip3.html" target="_blank" id="ipguide" title="IP보안">
+                                    <span class="ip_text">IP보안</span>
+                                </a>
+                                <span class="switch">
+                                    <input type="checkbox" id="switch" class="switch_checkbox" value="off">
+                                    <label for="switch" class="switch_btn">
+                                        <span class="blind" id="switch_blind">off</span>
+                                    </label>
+                                </span>
                             </div>
                         </div>
                     </div>
