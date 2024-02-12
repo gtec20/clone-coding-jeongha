@@ -5,6 +5,23 @@
     <title>네이버 | 로그인</title>
 </head>
 <style>
+    .sel {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        width: 100%;
+        min-width: 95px;
+        height: 30px;
+        padding: 4px 10px 6px 8px;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        -webkit-appearance: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+
     .blind  {
         position: absolute;
         clip: rect(0 0 0 0);
@@ -45,7 +62,7 @@
             <h1>NAVER</h1>
             <!-- 언어 설정-->
             <div class="lang">
-                <select id="locale_switch">
+                <select class="sel" id="locale_switch" name="locale_switch" title="언어선택">
                     <option value="ko_KR">한국어</option>
                     <option value="en_US">English</option>
                 </select>
@@ -66,6 +83,7 @@
                 <li class="panel_item" style="display: block;">
                     <div class="panel_inner">
                         <div class="id_pw_wrap">
+                            <!--ID 입력-->
                             <div class="input_row" id="id_line">
                                 <span class="blind">아이디</span>
                                 <input type="text" class="input_text" id="id" name="id" placeholder="아이디" maxlength="41">
@@ -73,6 +91,7 @@
                                         <span class="blind">삭제</span>
                                 </span>
                             </div>
+                            <!--PW 입력-->
                             <div class="input_row" id="pw_line">
                                 <span class="blind">비밀번호</span>
                                 <input type="text" class="input_text" id="pw" name="pw" placeholder="비밀번호" maxlength="16">
@@ -82,12 +101,14 @@
                             </div>
                         </div>
                         <div class="login_keep_wrap" id="login_keep_wrap">
+                            <!--로그인 상태 유지-->
                             <div class="keep_check">
                                 <input type="checkbox" class="input_keep" id="keep" name="nvlong" value="off">
                                 <label for="keep" class="keep_text">
                                     로그인 상태 유지
                                 </label>
                             </div>
+                            <!--IP보안 -->
                             <div class="ip_check">
                                 <a href="https://nid.naver.com/login/ext/help_ip3.html" target="_blank" id="ipguide" title="IP보안">
                                     <span class="ip_text">IP보안</span>
@@ -100,6 +121,7 @@
                                 </span>
                             </div>
                         </div>
+                        <!--오류 메시지-->
                         <div class="login_error_wrap" id="err_capslock">
                             <div class="error_message">
                                 <strong>CapsLock</strong>
@@ -126,6 +148,7 @@
                 </li>
             </ul>
         </div>
+        <!--ID/PW 찾기 | 회원가입-->
         <ul class="find_wrap" id="find_wrap">
             <li>
                 <a target="_blank" href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR" class="find_text">비밀번호 찾기</a>
@@ -139,29 +162,30 @@
         </ul>
         <div class="footer">
             <div class="footer_inner">
+                <!--고객센터, 제휴문의 서비스안내-->
                 <ul class="footer_link" id="footer_link">
-                <li>
-                    <a class="footer_item" id="fot.agreement" href="https://policy.naver.com/rules/service.html" target="_blank">
-                        <span class="text">이용약관</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="footer_item" id="fot.privacy" href="https://policy.naver.com/rules/privacy.html" target="_blank">
-                        <span class="text">
-                            <strong>개인정보처리방침</strong>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="footer_item" id="fot.disclaimer" href="https://policy.naver.com/rules/disclaimer.html" target="_blank">
-                        <span class="text">책임의 한계와 법적고지</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="footer_item" id="fot.help" href="https://help.naver.com/service/5640/category/bookmark?lang=ko" target="_blank">
-                        <span class="text">회원정보 고객센터</span>
-                    </a>
-                </li>
+                    <li>
+                        <a class="footer_item" id="fot.agreement" href="https://policy.naver.com/rules/service.html" target="_blank">
+                            <span class="text">이용약관</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer_item" id="fot.privacy" href="https://policy.naver.com/rules/privacy.html" target="_blank">
+                            <span class="text">
+                                <strong>개인정보처리방침</strong>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer_item" id="fot.disclaimer" href="https://policy.naver.com/rules/disclaimer.html" target="_blank">
+                            <span class="text">책임의 한계와 법적고지</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer_item" id="fot.help" href="https://help.naver.com/service/5640/category/bookmark?lang=ko" target="_blank">
+                            <span class="text">회원정보 고객센터</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="footer_copy">
                     <a id="fot.naver" target="_blank" href="https://www.navercorp.com/">
