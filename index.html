@@ -142,6 +142,19 @@
         padding: 20px 28px;
     }
 
+    .id_pw_wrap .input_row .icon_cell .icon_id {
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        margin-top: -8px;
+        background-position: -93px -203px;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        background-image: url("https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png");
+        background-size: 266px 225px;
+    }
+
     .id_pw_wrap .input_row .icon_cell {
         display: table-cell;
         width: 24px;
@@ -415,22 +428,27 @@
                                 <!--ID 입력-->
                                 <div class="input_row" id="id_line">
                                     <div class="icon_cell" id="id_cell">
-                                        <span class="blind">아이디</span>
-                                        <input type="text" class="input_text" id="id" name="id" placeholder="아이디" maxlength="41">
-                                        <span role="button" class="btn_delete" id="id_clear">
-                                            <span class="blind">삭제</span>
+                                        <span class="icon_id">
+                                            <span class="blind">아이디</span>
                                         </span>
                                     </div>
+                                    <input type="text" class="input_text" id="id" name="id" placeholder="아이디" maxlength="41">
+                                    <span role="button" class="btn_delete" id="id_clear">
+                                        <span class="blind">삭제</span>
+                                    </span>
+
                                 </div>
                                 <!--PW 입력-->
                                 <div class="input_row" id="pw_line">
                                     <div class="icon_cell" id="pw_cell">
-                                        <span class="blind">비밀번호</span>
-                                        <input type="text" class="input_text" id="pw" name="pw" placeholder="비밀번호" maxlength="16">
-                                        <span role="button" class="btn_delete" id="pw_clear">
-                                            <span class="blind">삭제</span>
+                                        <span class="icon_pw">
+                                            <span class="blind">비밀번호</span>
                                         </span>
                                     </div>
+                                    <input type="text" class="input_text" id="pw" name="pw" placeholder="비밀번호" maxlength="16">
+                                    <span role="button" class="btn_delete" id="pw_clear">
+                                        <span class="blind">삭제</span>
+                                    </span>
                                 </div>
                             </div>
                             <div class="login_keep_wrap" id="login_keep_wrap">
