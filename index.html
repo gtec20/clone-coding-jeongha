@@ -154,12 +154,17 @@
     }
 
     .header {
+        padding-bottom: 48px;
         color: forestgreen;
         text-align: center;
         margin: auto;
         width: 743px;
         position: relative;
         box-sizing: border-box;
+    }
+
+    header {
+        display: block;
     }
 
     ul.menu_wrap {
@@ -181,6 +186,63 @@
         margin-inline-start: 0px;
         padding-inline-start: 40px;
     }
+
+    button, input, select, textarea {
+        border-radius: 0;
+        border: none;
+        background: 0 0;
+        appearance: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-text-size-adjust: none;
+    }
+
+    body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: none;
+        font-family: -apple-system, BlinkMacSystemFont, helvetica, "Apple SD Gothic Neo", sans-serif ;
+    }
+
+    form {
+        display: block;
+        margin-top: 0em;
+    }
+
+    input[type="hidden" i] {
+        appearance: none;
+        background-color: initial;
+        cursor: default;
+        display: none;
+        padding: initial;
+        border: initial;
+    }
+
+    input {
+        text-rendering: auto;
+        color: fieldtext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        background-color: field;
+        margin: 0em;
+        padding: 1px 0px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: rgb(118,118,118);
+        border-image: initial;
+        padding-block: 1px;
+        padding-inline: 2px ;
+    }
+
 
     .wrap {
         letter-spacing: -.5px;
