@@ -22,8 +22,17 @@
         z-index: 1;
     }
 
-    .header, .logo [
-    ]
+    .header .logo {
+        display: inline-block;
+        margin-top: 108px;
+        vertical-align: top;
+        background-position: 0 -51px;
+        background-repeat: no-repeat;
+        width: 155px;
+        height: 30px;
+        background-image: url("https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png");
+        background-size: 244px 107px;
+    }
 
     .blind  {
         position: absolute;
@@ -62,7 +71,9 @@
     <!-- 전체적인 로그인 틀 -->
     <div class="wrap">
         <header class="header">
-            <h1>NAVER</h1>
+            <a href="https://www.naver.com/" class="logo">
+                <h1 class="blind">NAVER</h1>
+            </a>
             <!-- 언어 설정-->
             <div class="lang">
                 <select class="sel" id="locale_switch" name="locale_switch" title="언어선택">
