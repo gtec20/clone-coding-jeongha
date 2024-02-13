@@ -5,6 +5,34 @@
     <title>네이버 | 로그인</title>
 </head>
 <style>
+    .menu_id.on {
+        border-color: #c6c6c6;
+        background-color: #fff;
+        z-index: 5;
+    }
+    .menu_id {
+        border-right: 0;
+        border-radius: 6px 0 0 0;
+        height: 61px;
+        display: block;
+        position: relative;
+        padding-top: 17px;
+        border: 1px solid #e3e3e3;
+        border-bottom: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:-webkit-any-link {
+        color: -webkit-link;
+    }
+
+
     .sel {
         position: relative;
         font-size: 12px;
@@ -61,9 +89,23 @@
         position: relative;
         box-sizing: border-box;
     }
+
+    .menu_wrap {
+        border-collapse:  collapse;
+    }
+
     ul {
         list-style: none;
         text-align: center;
+    }
+
+    .wrap {
+        letter-spacing: -.5px;
+    }
+
+    html {
+        height: 100%;
+        font-size:  14px;
     }
 
 </style>
